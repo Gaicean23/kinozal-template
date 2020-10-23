@@ -63,7 +63,8 @@
 }
 
 .panel {
-  margin-bottom: $gap * 5.3333333;
+  margin-bottom: $gap * 2;
+  // margin-bottom: 30px;
 
   &-info {
     border: none;
@@ -81,5 +82,12 @@
   &-body {
     border: 1px solid $color-gray;
     border-radius: 0 0 4px 4px;
+  }
+}
+
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
   }
 }
