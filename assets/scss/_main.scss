@@ -1,3 +1,41 @@
 .main {
-    @extend %margin-bottom-lg;
+  @extend %margin-bottom-lg;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+
+  .user-login {
+    margin-bottom: $gap * 4;
+  }
+}
+
+.new-films,
+.top-week {
+  position: relative;
+  overflow: hidden;
+
+  h3 {
+    font-family: $font-main;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+  }
+
+  &-row {
+    margin-left: -$gap / 2;
+    margin-right: -$gap / 2;
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    margin-bottom: $gap;
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+  }
 }

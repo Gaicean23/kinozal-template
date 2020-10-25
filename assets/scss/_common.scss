@@ -1,20 +1,58 @@
 html {
-    font-size: $font-size;
-overflow-y: scroll;
+  font-size: $font-size;
+  overflow-y: scroll;
 }
 
 body {
-    font-size: 1rem;
-    font-family: $font-main;
+  font-size: 1rem;
+  font-family: $font-main;
 }
 
 a {
-    color: $color-primary;
+  color: $color-primary;
 
-    &:hover,
-    &:focus {
-        text-decoration: none;
-        color: $color-accent;
-    }
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-accent;
+  }
+}
 
+h1 {
+  font-family: $font-header;
+  font-size: 3rem;
+  margin-top: -7.5px;
+  margin-bottom: $gap * 3;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    border-bottom: 3px solid lighten($color-accent, 25%);
+  }
+}
+
+h2 {
+  font-family: $font-header;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 60px 0 45px 45px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 30px;
+    margin: 0.25em 0 0 0;
+    border-bottom: 3px solid lighten($color-accent, 25%);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    margin: 0.85em 0 0 15px;
+    border-bottom: 3px solid lighten($color-accent, 25%);
+  }
 }
