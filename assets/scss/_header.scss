@@ -26,7 +26,7 @@
     @include xs {
       font-size: 2.5rem;
       letter-spacing: 0.2em;
-      margin-right: calc - ($gap / 3);
+      margin-right: -($gap / 2);
     }
   }
 

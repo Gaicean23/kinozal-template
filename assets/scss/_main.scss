@@ -15,13 +15,14 @@
   position: relative;
   overflow: hidden;
 
-  h3 {
+   h3 {
     font-family: $font-main;
     font-size: 1rem;
     font-weight: 700;
     margin: 0;
     text-align: center;
-  }
+    color: $color-primary;
+   }
 
   &-row {
     margin-left: -$gap / 2;
@@ -36,6 +37,60 @@
 
     &__thumbnail {
       margin-bottom: 0;
+      background-color: transparent;
+
+      &:hover {
+        background-color: $color-accent;
+        transition: background-color 0.3s;
+        h3 {
+          color: $color-light;
+        }
+      }
+    }
+    &__image {
+      width: 100%;
     }
   }
 }
+
+.films-news {
+  position: relative;
+  overflow: hidden;
+
+
+  h3 {
+    color: $color-primary;
+    transition: color 0.25s;
+    @include xs {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__thumbnail {
+    margin-bottom: 0;
+    background-color: transparent;
+    transition: background-color 0.25s;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__text {
+    text-align: justify;
+  }
+  &__button {
+    float: right;
+    margin-bottom: 30px;
+    transition: background-color;
+  }
+
+  .films-news-item:hover h3 > a {
+    color: $color-accent;
+  }
+  .films-news-item:hover &__thumbnail {
+    background-color: $color-accent;
+  }
+  .films-news-item:hover &__button {
+    background-color: $color-accent;
+  }
+}
+

@@ -1,0 +1,51 @@
+.film-info {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.2em;
+
+  .embed-responsive {
+    border: 1px solid #dddddd;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+  }
+  &__well {
+    text-align: center;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &__wrapper {
+    white-space: nowrap;
+    &:not(:last-of-type) {
+      margin-right: 15px;
+    }
+  }
+  &__badge {
+      font-size: 0.8em;
+  }
+}
+
+.film-description {
+    position: relative;
+    overflow: hidden;
+}
+
+.film-reviews {
+    position: relative;
+    overflow: hidden;
+    
+   .panel {
+       border: none;
+       background-color: #ebebeb;
+       &:last-of-type {
+           margin-bottom: 30px;
+       }
+   }
+}
+
+.film-comment-form {
+    position: relative;
+    overflow: hidden;
+    &__button {
+        float: right;
+    }
+}
